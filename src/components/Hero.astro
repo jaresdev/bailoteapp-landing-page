@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+---
+
+<section class="w-full px-8 py-12 gap-6 flex max-w-[1440px] mx-auto">
+  <div class="w-1/2 flex flex-col gap-12 items-center">
+    <h1 class="text-[#AE6F54] text-5xl font-bold w-full">
+      La mejor aplicación de eventos de baile
+    </h1>
+    <div class="text-2xl flex flex-col gap-4 w-full">
+      <p>Descubre eventos, clases y profesores cerca de ti.</p>
+      <p>Conecta con personas apasionadas como tú.</p>
+      <p>Mantente al día con todo lo que sucede en el vibrante mundo del baile.</p>
+    </div>
+    <button class="w-[472px] h-[49px] bg-[#A0A286] rounded-lg text-white 
+      text-base font-semibold hover:bg-[#7d7e69] transition-all duration-300"
+    >
+      Quiero unirme a la lista de espera
+    </button>
+  </div>
+  <Image 
+    src="/hero_image.webp" 
+    alt="Bailoteapp Hero" 
+    width="676" 
+    height="463"
+    class="rounded-lg"
+  />
+</section>
