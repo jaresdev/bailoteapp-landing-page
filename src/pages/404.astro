@@ -1,0 +1,18 @@
+---
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+	<Navbar />
+  <div class="h-[calc(100vh_-_11rem)] flex flex-col gap-10 items-center justify-center">
+    <h2 class="text-[#AE6F54] font-bold text-9xl">404</h2>
+    <p class="font-semibold text-2xl text-[#2c242291]">Página no encontrada</p>
+    <a href="/" class="bg-[#A0A286] text-white min-w-[168px] rounded-lg px-2 
+      h-12 text-base font-semibold hover:bg-[#7d7e69] transition-all 
+      duration-300 flex justify-center items-center"
+    >Volver al inicio</a>
+  </div>
+  <Footer />
+</Layout>
