@@ -1,7 +1,7 @@
 ---
 const { id } = Astro.props
 ---
-<section id="cta" class="py-40 bg-[#B47257] my-20 flex items-center justify-center">
+<section id={ id } class="py-40 bg-[#B47257] my-20 flex items-center justify-center">
   <article class="w-1/4 flex flex-col items-end">
     <h2 class="text-white mb-10 font-bold text-2xl text-center text-balance">
       Recibe antes que nadie todas las novedades y acceso exclusivo a la app.
@@ -10,7 +10,6 @@ const { id } = Astro.props
       <input 
         type="email"
         name="lead_email"
-        id={ id }
         class="w-[416px] h-12 rounded-lg py-2 px-4 flex-1"
         placeholder="Tu mejor correo electrónico"
       />
