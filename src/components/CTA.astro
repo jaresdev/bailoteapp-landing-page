@@ -2,21 +2,25 @@
 const { id } = Astro.props
 ---
 <section id="cta" class="py-40 bg-[#B47257] my-20 flex items-center justify-center">
-  <article class="inline-block">
-    <div>
+  <article class="w-1/4 flex flex-col items-end">
+    <h2 class="text-white mb-10 font-bold text-2xl text-center text-balance">
+      Recibe antes que nadie todas las novedades y acceso exclusivo a la app.
+    </h2>
+    <div class="flex gap-2">
       <input 
         type="email"
         name="lead_email"
         id={ id }
-        class="w-[416px] h-12 rounded-lg py-2 px-4"
+        class="w-[416px] h-12 rounded-lg py-2 px-4 flex-1"
         placeholder="Tu mejor correo electrónico"
       />
       <button class="bg-[#A0A286] text-white min-w-[168px] rounded-lg px-2 
         h-12 text-base font-semibold hover:bg-[#7d7e69] transition-all duration-300"
       >Unirme a la lista</button>
     </div>
-    <p class="text-white text-xs font-thin pt-2">
-      Recibe antes que nadie todas las novedades y acceso exclusivo a la app.
+    <p class="text-white text-xs font-thin pt-6">
+      Al unirte a la lista, aceptas nuestra 
+      <a href="/privacidad" class="underline">política de privacidad</a>.
     </p>
   </article>
 </section>
